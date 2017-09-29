@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>Bank of TypeScript</title>
+    <link rel="stylesheet" type="text/css" rel="BankAccount.css">
+	<script src="BankAccountUI.js"></script>
+	<script src="../Models/BankAccount.js"></script>	
+<style>
+body {
+	margin:0;
+	padding:0;
+}
+#header h1,
+#header h2,
+#header p {
+	margin-left:2%;
+	padding-right:2%;
+}
+#active2 #tab2,
+#active3 #tab3,
+#active4 #tab4,
+#active5 #tab5 {
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+}
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+}
+#footer p {
+	margin-left:2%;
+	padding-right:2%;
+}
+
+/* Start of Column CSS */
+#container3 {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;	
+}
+#container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:33.333%;
+	background:#dcdcdc;
+}
+#container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:33.33%;
+	background:#fff;
+
+}
+#col1 {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:68.67%;
+	overflow:hidden;
+}
+#col2 {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:72.67%;
+	overflow:hidden;
+}
+#col3 {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:76.67%;
+	overflow:hidden;
+}
+
+
+</style>
+</head>
+
+<body>
+	<div id="header">
+		
+	</div>
+	<div id="container3">
+		<div id="container2">
+			<div id="container1">
+				<div id="col1">
+					<p></p>
+				</div>
+				<div id="col2">
+					<h2>Bank of TypeScript</h2>
+					<p>
+						<table>
+							<tr>
+								<td>Name:</td>
+								<td><input id="nameTextBox" type="text" /></td>
+							</tr>
+							<tr>
+								<td>Amount:</td>
+								<td><input id="amountTextBox" type="text" /></td>
+							</tr>
+							<tr>
+								<td>Account Type</td>
+								<td>
+									<select id="accountTypeDropdown">
+										<option value="">--Select One--</option>
+										<option value="Checking">Checking</option>
+										<option value="Savings">Saving</option>
+										<option value="Investment">Investment</option>
+									</select>
+								</td>
+						
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button id="openAccountButton" value="Open">Open Account</button>
+								</td>
+							</tr>
+							<tr>
+								<td><button disabled id="depositButton" value="Deposit">Deposit</button></td>
+								<td><button disabled id="withdrawButton" value="Withdraw">Withdraw</button></td>
+							</tr>
+							<tr>
+								<td colspan="2">&nbsp;</td>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">Name: <span id="accountHolderNameSpan">Customer</span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">Account ID: <span id="accountIdSpan">00000</span>
+								</td>
+							</tr>					
+							<tr >
+								<td colspan="2">Type: <span id="accountTypeSpan">None</span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">Balance: <span id="accountBalanceSpan">$0.00</span>
+								</td>
+							</tr>				
+							<tr>
+								<td colspan="2"><span id="messageSpan"></span>
+								</td>
+							</tr>															
+						</table>
+</p>
+					<!-- Column two end -->
+				</div>
+				<div id="col3">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p></p>
+	</div>
+	
+</body>
+
+
+</html>
+
+
